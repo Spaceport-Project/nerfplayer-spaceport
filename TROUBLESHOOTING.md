@@ -119,12 +119,12 @@ In this file add following import line somewhere in the begining of file:
 from nerfstudio.data.dataparsers.nerfplayer_multicam_dataparser import NerfplayerMulticamDataParserConfig
 ```
 
-Also change the following file for both nerfplayer_nerfacto and nerfplayer_ngp:
+Also change the following line for both nerfplayer_nerfacto and nerfplayer_ngp:
 
 ```python
 dataparser=DycheckDataParserConfig(),
 ```
-
+to
 ```python
 dataparser=NerfplayerMulticamDataParserConfig(),
 ```
