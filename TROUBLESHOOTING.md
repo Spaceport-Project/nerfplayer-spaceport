@@ -346,12 +346,13 @@ change with:
 if version != old_version:
         baton = FileBaton(os.path.join(build_directory, 'lock'))
         if True:
-        .
-        .
-        .
-        finally:
-                      pass
-                      # baton.release()
+          try:
+          .
+          .
+          .
+          finally:
+                        pass
+                        # baton.release()
 ```
 
 At this stage training again does not start and when we killed the process with Ctrl+C, If we get followings on the terminal:
