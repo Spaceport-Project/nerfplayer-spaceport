@@ -11,4 +11,5 @@ include = ["nerfplayer*"]
 
 [project.entry-points.'nerfstudio.method_configs']
 nerfplayer_nerfacto = 'nerfplayer.nerfplayer_config:nerfplayer_nerfacto'
+nerfplayer_nerfacto_multicam = 'nerfplayer.nerfplayer_config:nerfplayer_nerfacto_multicam'
 nerfplayer_ngp = 'nerfplayer.nerfplayer_config:nerfplayer_ngp'
