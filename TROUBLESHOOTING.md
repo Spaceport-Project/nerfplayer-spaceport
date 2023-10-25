@@ -182,6 +182,7 @@ copy csrc file to the cuda folder under nerfplayer installation path. To do so:
 ```bash
 cd ~/nerfplayer-spaceport/nerfplayer/cuda
 sudo cp -r csrc /opt/conda/envs/nerfspaceport/lib/python3.8/site-packages/nerfplayer/cuda
+sudo cp -r csrc /opt/conda/envs/nerfspaceport/lib/python3.8/site-packages/nerfacc/
 ```
 
 When we give another try to training, it returns no errors but also does not start training (normally it should start trainin in 5 mins, maybe longer if it is first successful training):
@@ -345,6 +346,12 @@ change with:
 if version != old_version:
         baton = FileBaton(os.path.join(build_directory, 'lock'))
         if True:
+        .
+        .
+        .
+        finally:
+                      pass
+                      # baton.release()
 ```
 
 At this stage training again does not start and when we killed the process with Ctrl+C, If we get followings on the terminal:
